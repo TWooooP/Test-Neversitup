@@ -1,4 +1,4 @@
-package main
+package odd_number
 
 import (
 	"fmt"

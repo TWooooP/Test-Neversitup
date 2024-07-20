@@ -1,4 +1,4 @@
-package main
+package manupulate
 
 import (
 	"fmt"
@@ -7,13 +7,14 @@ import (
 
 // Write your test here
 
-func TestDDD(t *testing.T) {
+func TestManupulate(t *testing.T) {
 	//data := []string{"a"}
 	//data := []string{"ab"}
-	data := []string{"aabb"}
+	data := []string{"abc"}
 	//data := []string{"aabb"}
 
 	var result []string
 	result = Manipulate(data)
 	fmt.Println(result)
+
 }

@@ -1,4 +1,4 @@
-package main
+package manupulate
 
 func Manipulate(text []string) []string {
 	duplicate := make(map[string]struct{})

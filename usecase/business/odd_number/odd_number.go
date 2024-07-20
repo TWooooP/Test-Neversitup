@@ -1,13 +1,10 @@
-package main
+package odd_number
 
-type CollectData struct {
-	Value int `json:"value"`
-	Count int `json:"count"`
-}
+import "test-neversitup/model"
 
 func FindOddNumber(text []int) int {
 	// TODO : start your code here
-	var ResultData []CollectData
+	var ResultData []model.CollectData
 
 	for _, data := range text {
 		var foundData bool
@@ -17,12 +14,11 @@ func FindOddNumber(text []int) int {
 			if data == collect.Value {
 				ResultData[i].Count += 1
 				foundData = true
-				break
 			}
 		}
 		//if not have data add new data
 		if foundData == false {
-			result := CollectData{
+			result := model.CollectData{
 				Value: data,
 				Count: 1,
 			}
